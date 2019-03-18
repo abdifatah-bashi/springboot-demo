@@ -6,11 +6,11 @@ FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 
 # The application's jar file
-ARG JAR_FILE=target/springboot-demo.war
+ARG JAR_FILE=target/springboot-demo-1.war
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} springboot-demo.war
+ADD ${JAR_FILE} springboot-demo-1.war
 
 # Run the jar file 
-ENTRYPOINT ["java","-jar","/springboot-demo.war"]
+ENTRYPOINT ["java","-jar","/springboot-demo-1.war"]
 
